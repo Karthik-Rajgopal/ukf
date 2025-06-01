@@ -44,3 +44,20 @@ Two functions interface with the system:
 
 ## File Structure
 
+ukf_bicycle/
+├── estInitialize.py # Initializes the UKF
+├── estRun.py # Performs UKF time and measurement updates
+├── main.py # Runs simulation and plots results
+├── utils.py # Helper functions (e.g., angle wrapping)
+└── data/
+└── bicycle_data.csv # Steering, pedal speed, and GPS measurements
+
+## Results
+
+The UKF provides smooth and accurate estimates of the bicycle's trajectory even with intermittent or noisy measurements. The filter successfully adapts to uncertainties in physical parameters.
+
+## Contributors
+
+- **Karthik Rajgopal** – UKF implementation, data processing, report intro and problem setup
+- **Jannik Heinen** – Code logic, structure, and algorithm implementation
+- **Mauricio Vergara** – Cleanup, conclusion, and formatting
